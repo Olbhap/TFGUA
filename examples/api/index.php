@@ -108,9 +108,10 @@ function apiVersion()
 function apiUsers()
 {
   return array(
-    array('username' => 'jmathai'),
+    array('username' => 'jmathai', 'color'=> 'verde'),
     array('username' => 'stevejobs'),
-    array('username' => 'billgates')
+    array('username' => 'billgates'),
+      array('asdasdasd' => 'billgates')
   );
 }
 
