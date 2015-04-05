@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - eps@localhost" uuid="01383689-39ae-4871-becc-9f7b1ce55fd0">
+    <database-info product="MySQL" version="5.6.17-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.34 ( Revision: jess.balint@oracle.com-20141014163213-wqbwpf1ok2kvo1om )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="eps"/>
+    <table name="asignaturas" schema="" catalog="eps" type="TABLE">
+      <column name="CODASI" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="NOMBRE" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="CODPLA" sqlType="VARCHAR" precision="5" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="TIPO" sqlType="VARCHAR" precision="15" scale="0" nullable="true" jdbcType="12"/>
+      <column name="CURSO" sqlType="SMALLINT" precision="5" scale="0" nullable="true" jdbcType="5"/>
+      <column name="CREDTEORICOS" sqlType="DECIMAL" precision="4" scale="2" nullable="true" jdbcType="3"/>
+      <column name="CREDPRACTICA" sqlType="DECIMAL" precision="4" scale="2" nullable="true" jdbcType="3"/>
+      <column name="CODCUA" sqlType="CHAR" precision="1" scale="0" nullable="true" jdbcType="1"/>
+      <column name="CPD" sqlType="CHAR" precision="1" scale="0" nullable="true" jdbcType="1" def="J04n"/>
+      <column name="CREDECTS" sqlType="DECIMAL" precision="4" scale="2" nullable="true" jdbcType="3"/>
+      <column name="ANOINICIO" sqlType="YEAR" precision="0" scale="0" nullable="true" jdbcType="91"/>
+      <column name="PORCPRESENCIAL" sqlType="DECIMAL" precision="4" scale="2" nullable="true" jdbcType="3"/>
+      <primary-key name="PRIMARY" columns="CODASI"/>
+      <index name="CODASI" unique="true" columns="CODASI"/>
+      <index name="CODCUA" unique="false" columns="CODCUA"/>
+      <index name="CODPLA" unique="false" columns="CODPLA"/>
+      <index name="NOMBRE" unique="false" columns="NOMBRE"/>
+    </table>
+    <table name="asignaturasactividades" schema="" catalog="eps" type="TABLE">
+      <column name="CODACT" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="CICLO" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="TIPOACTIV" sqlType="VARCHAR" precision="5" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="ACTIVIDAD" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="RATIOALU" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="RATIOMINIMO" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="COEFICIENTEACTIV" sqlType="DECIMAL" precision="7" scale="2" nullable="false" jdbcType="3" def="MC4wMA=="/>
+      <column name="PORSESIONES" sqlType="ENUM" precision="2" scale="0" nullable="true" jdbcType="1" def="J04n"/>
+      <primary-key name="PRIMARY" columns="CODACT"/>
+      <exported-key name="ASIGNATURASCURSOSACTIV_ibfk_1" table="asignaturascursosactiv" schema="" catalog="eps" columns="CODACT"/>
+      <exported-key name="ASIGNATURASCURSOSACTIV_VOAP_ibfk_1" table="asignaturascursosactiv_voap" schema="" catalog="eps" columns="CODACT"/>
+    </table>
+    <table name="asignaturascursos" schema="" catalog="eps" type="TABLE">
+      <column name="CURSO" sqlType="VARCHAR" precision="9" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="CODASI" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="COMPARTIDA" sqlType="CHAR" precision="1" scale="0" nullable="true" jdbcType="1" def="J04n"/>
+      <column name="GRUPO" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="GRUPOSTEORIA" sqlType="DECIMAL" precision="6" scale="2" nullable="true" jdbcType="3" def="MC4wMA=="/>
+      <column name="GRUPOSTEORIA_M" sqlType="DECIMAL" precision="6" scale="2" nullable="true" jdbcType="3" def="MC4wMA=="/>
+      <column name="GRUPOSTEORIA_T" sqlType="DECIMAL" precision="6" scale="2" nullable="true" jdbcType="3" def="MC4wMA=="/>
+      <column name="GRUPOSPRACTICAS" sqlType="DECIMAL" precision="6" scale="2" nullable="true" jdbcType="3" def="MC4wMA=="/>
+      <column name="GRUPOSPRACTICAS_M" sqlType="DECIMAL" precision="6" scale="2" nullable="true" jdbcType="3" def="MC4wMA=="/>
+      <column name="GRUPOSPRACTICAS_T" sqlType="DECIMAL" precision="6" scale="2" nullable="true" jdbcType="3" def="MC4wMA=="/>
+      <column name="GRUPOSTEORICOPRACTICOS" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="GRUPOSTEORICOPRACTICOS_M" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="GRUPOSTEORICOPRACTICOS_T" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="GRUPOSTEORIA_VAL" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="GRUPOSPRACTICAS_VAL" sqlType="DECIMAL" precision="6" scale="2" nullable="true" jdbcType="3" def="MC4wMA=="/>
+      <column name="GRUPOSTEORICOPRACTICOS_VAL" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="GRUPOSINGLES" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="MATRICULACIONES" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="ESTIMACIONES" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="TIPO" sqlType="VARCHAR" precision="15" scale="0" nullable="true" jdbcType="12"/>
+      <column name="CODCUA" sqlType="CHAR" precision="1" scale="0" nullable="true" jdbcType="1"/>
+      <column name="POITEORIA" sqlType="DECIMAL" precision="6" scale="2" nullable="true" jdbcType="3" def="MC4wMA=="/>
+      <column name="POIPRACTICAS" sqlType="DECIMAL" precision="6" scale="2" nullable="true" jdbcType="3" def="MC4wMA=="/>
+      <column name="POITEORICOPRACTICOS" sqlType="DECIMAL" precision="6" scale="2" nullable="true" jdbcType="3" def="MC4wMA=="/>
+      <column name="OFERTADA" sqlType="CHAR" precision="1" scale="0" nullable="true" jdbcType="1" def="J04n"/>
+      <column name="TIENETEORICOPRACTICOS" sqlType="CHAR" precision="1" scale="0" nullable="true" jdbcType="1" def="J04n"/>
+      <column name="TIPOAULATEORIA" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MQ=="/>
+      <column name="TIPOAULAPRACTICAS" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MQ=="/>
+      <column name="DOCENCIA" sqlType="CHAR" precision="1" scale="0" nullable="true" jdbcType="1" def="J1Mn"/>
+      <column name="EXAMENES" sqlType="CHAR" precision="1" scale="0" nullable="true" jdbcType="1" def="J1Mn"/>
+      <column name="ESTADO" sqlType="ENUM" precision="1" scale="0" nullable="true" jdbcType="1" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="CURSO,CODASI"/>
+      <foreign-key name="FK_ASIGNATURASCURSOS_TIPOAULAPRACTICA" columns="TIPOAULAPRACTICAS" ref-table="hor_tiposaula" ref-schema="" ref-catalog="eps" ref-columns="TIPOAULA" update-rule="0" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FK_ASIGNATURASCURSOS_TIPOTEORIA" columns="TIPOAULATEORIA" ref-table="hor_tiposaula" ref-schema="" ref-catalog="eps" ref-columns="TIPOAULA" update-rule="0" delete-rule="3" deferrability="2"/>
+      <index name="CODASI" unique="false" columns="CODASI"/>
+      <index name="CURSO" unique="false" columns="CURSO"/>
+      <index name="FK_ASIGNATURASCURSOS_TIPOAULAPRACTICA" unique="false" columns="TIPOAULAPRACTICAS"/>
+      <index name="FK_ASIGNATURASCURSOS_TIPOTEORIA" unique="false" columns="TIPOAULATEORIA"/>
+      <index name="GRUPO" unique="false" columns="GRUPO"/>
+    </table>
+    <table name="asignaturascursos_voap" schema="" catalog="eps" type="TABLE">
+      <column name="CURSO" sqlType="VARCHAR" precision="9" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="CODASI" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="COMPARTIDA" sqlType="CHAR" precision="1" scale="0" nullable="true" jdbcType="1" def="J04n"/>
+      <column name="GRUPO" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="GRUPOSTEORIA" sqlType="DECIMAL" precision="6" scale="2" nullable="true" jdbcType="3" def="MC4wMA=="/>
+      <column name="GRUPOSTEORIA_M" sqlType="DECIMAL" precision="6" scale="2" nullable="true" jdbcType="3" def="MC4wMA=="/>
+      <column name="GRUPOSTEORIA_T" sqlType="DECIMAL" precision="6" scale="2" nullable="true" jdbcType="3" def="MC4wMA=="/>
+      <column name="GRUPOSPRACTICAS" sqlType="DECIMAL" precision="6" scale="2" nullable="true" jdbcType="3" def="MC4wMA=="/>
+      <column name="GRUPOSPRACTICAS_M" sqlType="DECIMAL" precision="6" scale="2" nullable="true" jdbcType="3" def="MC4wMA=="/>
+      <column name="GRUPOSPRACTICAS_T" sqlType="DECIMAL" precision="6" scale="2" nullable="true" jdbcType="3" def="MC4wMA=="/>
+      <column name="GRUPOSTEORICOPRACTICOS" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="GRUPOSTEORICOPRACTICOS_M" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="GRUPOSTEORICOPRACTICOS_T" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="GRUPOSTEORIA_VAL" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="GRUPOSPRACTICAS_VAL" sqlType="DECIMAL" precision="6" scale="2" nullable="true" jdbcType="3" def="MC4wMA=="/>
+      <column name="GRUPOSTEORICOPRACTICOS_VAL" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="GRUPOSINGLES" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="MATRICULACIONES" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="ESTIMACIONES" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="TIPO" sqlType="VARCHAR" precision="15" scale="0" nullable="true" jdbcType="12"/>
+      <column name="CODCUA" sqlType="CHAR" precision="1" scale="0" nullable="true" jdbcType="1"/>
+      <column name="POITEORIA" sqlType="DECIMAL" precision="6" scale="2" nullable="true" jdbcType="3" def="MC4wMA=="/>
+      <column name="POIPRACTICAS" sqlType="DECIMAL" precision="6" scale="2" nullable="true" jdbcType="3" def="MC4wMA=="/>
+      <column name="POITEORICOPRACTICOS" sqlType="DECIMAL" precision="6" scale="2" nullable="true" jdbcType="3" def="MC4wMA=="/>
+      <column name="OFERTADA" sqlType="CHAR" precision="1" scale="0" nullable="true" jdbcType="1" def="J04n"/>
+      <column name="TIENETEORICOPRACTICOS" sqlType="CHAR" precision="1" scale="0" nullable="true" jdbcType="1" def="J04n"/>
+      <column name="TIPOAULATEORIA" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MQ=="/>
+      <column name="TIPOAULAPRACTICAS" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MQ=="/>
+      <column name="DOCENCIA" sqlType="CHAR" precision="1" scale="0" nullable="true" jdbcType="1" def="J1Mn"/>
+      <column name="EXAMENES" sqlType="CHAR" precision="1" scale="0" nullable="true" jdbcType="1" def="J1Mn"/>
+      <column name="ESTADO" sqlType="ENUM" precision="1" scale="0" nullable="true" jdbcType="1" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="CURSO,CODASI"/>
+      <foreign-key name="FK_ASIGNATURASCURSOS_VOAP_TIPOAULAPRACTICA" columns="TIPOAULAPRACTICAS" ref-table="hor_tiposaula" ref-schema="" ref-catalog="eps" ref-columns="TIPOAULA" update-rule="0" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FK_ASIGNATURASCURSOS_VOAP_TIPOTEORIA" columns="TIPOAULATEORIA" ref-table="hor_tiposaula" ref-schema="" ref-catalog="eps" ref-columns="TIPOAULA" update-rule="0" delete-rule="3" deferrability="2"/>
+      <index name="CODASI" unique="false" columns="CODASI"/>
+      <index name="CURSO" unique="false" columns="CURSO"/>
+      <index name="FK_ASIGNATURASCURSOS_VOAP_TIPOAULAPRACTICA" unique="false" columns="TIPOAULAPRACTICAS"/>
+      <index name="FK_ASIGNATURASCURSOS_VOAP_TIPOTEORIA" unique="false" columns="TIPOAULATEORIA"/>
+      <index name="GRUPO" unique="false" columns="GRUPO"/>
+    </table>
+    <table name="asignaturascursosactiv" schema="" catalog="eps" type="TABLE">
+      <column name="CURSO" sqlType="VARCHAR" precision="9" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="CODASI" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="CODACT" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="CREDECTS" sqlType="DECIMAL" precision="7" scale="2" nullable="false" jdbcType="3" def="MC4wMA=="/>
+      <column name="CODTIPOAULA" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="GRUPOS" sqlType="DECIMAL" precision="6" scale="2" nullable="true" jdbcType="3" def="MC4wMA=="/>
+      <column name="GRUPOS_M" sqlType="DECIMAL" precision="6" scale="2" nullable="true" jdbcType="3" def="MC4wMA=="/>
+      <column name="GRUPOS_T" sqlType="DECIMAL" precision="6" scale="2" nullable="true" jdbcType="3" def="MC4wMA=="/>
+      <column name="GRUPOS_VAL" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="GRUPOS_ING" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="GRUPOS_ARA" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="POI" sqlType="DECIMAL" precision="16" scale="2" nullable="true" jdbcType="3" def="MC4wMA=="/>
+      <column name="TIPOGRUPO" sqlType="ENUM" precision="7" scale="0" nullable="true" jdbcType="1" def="J1JFQUwn"/>
+      <primary-key name="PRIMARY" columns="CURSO,CODASI,CODACT"/>
+      <foreign-key name="ASIGNATURASCURSOSACTIV_ibfk_1" columns="CODACT" ref-table="asignaturasactividades" ref-schema="" ref-catalog="eps" ref-columns="CODACT" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="ASIGNATURASCURSOSACTIV_ibfk_2" columns="CODTIPOAULA" ref-table="tiposaula" ref-schema="" ref-catalog="eps" ref-columns="CODTIPOAULA" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="asignaturascursosactiv_voap" schema="" catalog="eps" type="TABLE">
+      <column name="CURSO" sqlType="VARCHAR" precision="9" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="CODASI" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="CODACT" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="CREDECTS" sqlType="DECIMAL" precision="7" scale="2" nullable="false" jdbcType="3" def="MC4wMA=="/>
+      <column name="CODTIPOAULA" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="GRUPOS" sqlType="DECIMAL" precision="6" scale="2" nullable="true" jdbcType="3" def="MC4wMA=="/>
+      <column name="GRUPOS_M" sqlType="DECIMAL" precision="6" scale="2" nullable="true" jdbcType="3" def="MC4wMA=="/>
+      <column name="GRUPOS_T" sqlType="DECIMAL" precision="6" scale="2" nullable="true" jdbcType="3" def="MC4wMA=="/>
+      <column name="GRUPOS_VAL" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="GRUPOS_ING" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="GRUPOS_ARA" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="POI" sqlType="DECIMAL" precision="16" scale="2" nullable="true" jdbcType="3" def="MC4wMA=="/>
+      <column name="TIPOGRUPO" sqlType="ENUM" precision="7" scale="0" nullable="true" jdbcType="1" def="J1JFQUwn"/>
+      <primary-key name="PRIMARY" columns="CURSO,CODASI,CODACT"/>
+      <foreign-key name="ASIGNATURASCURSOSACTIV_VOAP_ibfk_1" columns="CODACT" ref-table="asignaturasactividades" ref-schema="" ref-catalog="eps" ref-columns="CODACT" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="ASIGNATURASCURSOSACTIV_VOAP_ibfk_2" columns="CODTIPOAULA" ref-table="tiposaula" ref-schema="" ref-catalog="eps" ref-columns="CODTIPOAULA" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="hor_aulassiguadotaciones" schema="" catalog="eps" type="TABLE">
+      <column name="CODAUL" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="CODDOT" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <primary-key name="PRIMARY" columns="CODAUL,CODDOT"/>
+      <foreign-key name="HOR_AULASSIGUADOTACIONES_ibfk_1" columns="CODDOT" ref-table="hor_dotaciones" ref-schema="" ref-catalog="eps" ref-columns="CODDOT" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="hor_aulassiguamantenimiento" schema="" catalog="eps" type="TABLE">
+      <column name="CODMAN" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="CURSO" sqlType="VARCHAR" precision="9" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="CODCUA" sqlType="CHAR" precision="1" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="CODAUL" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="CODDIA" sqlType="CHAR" precision="1" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="HORAINICIO" sqlType="TIME" precision="8" scale="0" nullable="false" jdbcType="92" def="JzAwOjAwOjAwJw=="/>
+      <column name="HORAFIN" sqlType="TIME" precision="8" scale="0" nullable="false" jdbcType="92" def="JzAwOjAwOjAwJw=="/>
+      <primary-key name="PRIMARY" columns="CODMAN"/>
+      <foreign-key name="HOR_AULASSIGUAMANTENIMIENTO_ibfk_1" columns="CODAUL" ref-table="aulassigua" ref-schema="" ref-catalog="eps" ref-columns="CODAUL" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="HOR_AULASSIGUAMANTENIMIENTO_ibfk_2" columns="CURSO" ref-table="hor_ejercicios" ref-schema="" ref-catalog="eps" ref-columns="CURSO" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="hor_aulassiguareparto" schema="" catalog="eps" type="TABLE">
+      <column name="CODREP" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="CURSO" sqlType="VARCHAR" precision="9" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="CODCUA" sqlType="CHAR" precision="1" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="CODAUL" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="CODTIT" sqlType="CHAR" precision="3" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="CODDEP" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="TURNO" sqlType="CHAR" precision="3" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="CODREP"/>
+      <foreign-key name="HOR_AULASSIGUAREPARTO_ibfk_1" columns="TURNO" ref-table="hor_turnosaula" ref-schema="" ref-catalog="eps" ref-columns="TURNO" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="HOR_AULASSIGUAREPARTO_ibfk_2" columns="CODAUL" ref-table="aulassigua" ref-schema="" ref-catalog="eps" ref-columns="CODAUL" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="HOR_AULASSIGUAREPARTO_ibfk_3" columns="CURSO" ref-table="hor_ejercicios" ref-schema="" ref-catalog="eps" ref-columns="CURSO" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="HOR_AULASSIGUAREPARTODIAS_ibfk_1" table="hor_aulassiguarepartodias" schema="" catalog="eps" columns="CODREP"/>
+    </table>
+    <table name="hor_aulassiguarepartodias" schema="" catalog="eps" type="TABLE">
+      <column name="CODREP" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="CODDIA" sqlType="CHAR" precision="1" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="CODREP,CODDIA"/>
+      <foreign-key name="HOR_AULASSIGUAREPARTODIAS_ibfk_1" columns="CODREP" ref-table="hor_aulassiguareparto" ref-schema="" ref-catalog="eps" ref-columns="CODREP" update-rule="3" delete-rule="0" deferrability="2"/>
+    </table>
+    <table name="hor_biyeccion" schema="" catalog="eps" type="TABLE">
+      <column name="CODBIY" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="CURSO" sqlType="VARCHAR" precision="9" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="CODCUA" sqlType="CHAR" precision="1" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="CODAULORIGEN" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="CODAULDESTINO" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="TURNO" sqlType="CHAR" precision="3" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="ESTADO" sqlType="ENUM" precision="10" scale="0" nullable="true" jdbcType="1" def="J1BFTkRJRU5URSc="/>
+      <primary-key name="PRIMARY" columns="CODBIY"/>
+    </table>
+    <table name="hor_biyeccionsiguavirtual" schema="" catalog="eps" type="TABLE">
+      <column name="CURSO" sqlType="VARCHAR" precision="9" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="AULASIGUA" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="AULAVIRTUAL" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="CURSO,AULASIGUA,AULAVIRTUAL"/>
+      <foreign-key name="HOR_BIYECCIONSIGUAVIRTUAL_ibfk_1" columns="AULASIGUA" ref-table="aulassigua" ref-schema="" ref-catalog="eps" ref-columns="CODAUL" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="HOR_BIYECCIONSIGUAVIRTUAL_ibfk_2" columns="CURSO,AULAVIRTUAL" ref-table="hor_aulasvirtuales" ref-schema="" ref-catalog="eps" ref-columns="CURSO,CODAUL" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="CURSO" unique="false" columns="CURSO,AULAVIRTUAL"/>
+    </table>
+    <table name="hor_biyecciontitu" schema="" catalog="eps" type="TABLE">
+      <column name="CODBIY" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="CODTIT" sqlType="CHAR" precision="3" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="CODBIY,CODTIT"/>
+    </table>
+    <table name="hor_dotaciones" schema="" catalog="eps" type="TABLE">
+      <column name="CODDOT" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="DESCRIP" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="CODDOT"/>
+      <exported-key name="HOR_AULASSIGUADOTACIONES_ibfk_1" table="hor_aulassiguadotaciones" schema="" catalog="eps" columns="CODDOT"/>
+    </table>
+    <table name="hor_ejercicios" schema="" catalog="eps" type="TABLE">
+      <column name="CURSO" sqlType="VARCHAR" precision="9" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="EJE_CODNUM" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="CUATRIMESTRE1INIPARTE1" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="CUATRIMESTRE1FINPARTE1" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="CUATRIMESTRE1INIPARTE2" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="CUATRIMESTRE1FINPARTE2" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="CUATRIMESTRE2INIPARTE1" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="CUATRIMESTRE2FINPARTE1" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="CUATRIMESTRE2INIPARTE2" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="CUATRIMESTRE2FINPARTE2" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="CUATRIMESTRE1INIMASTER" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="CUATRIMESTRE1FINMASTER" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="CUATRIMESTRE2INIMASTER" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="CUATRIMESTRE2FINMASTER" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="CUATRIMESTRE1INIPARTE1_1GRADO" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="CUATRIMESTRE1FINPARTE1_1GRADO" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="CUATRIMESTRE1INIPARTE2_1GRADO" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="CUATRIMESTRE1FINPARTE2_1GRADO" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="CUATRIMESTRE2INIPARTE1_1GRADO" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="CUATRIMESTRE2FINPARTE1_1GRADO" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="CUATRIMESTRE2INIPARTE2_1GRADO" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="CUATRIMESTRE2FINPARTE2_1GRADO" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <primary-key name="PRIMARY" columns="CURSO"/>
+      <exported-key name="HOR_AULASSIGUAMANTENIMIENTO_ibfk_2" table="hor_aulassiguamantenimiento" schema="" catalog="eps" columns="CURSO"/>
+      <exported-key name="HOR_AULASSIGUAREPARTO_ibfk_3" table="hor_aulassiguareparto" schema="" catalog="eps" columns="CURSO"/>
+      <exported-key name="HOR_PARAMETROS_ibfk_1" table="hor_parametros" schema="" catalog="eps" columns="CURSO"/>
+    </table>
+    <table name="hor_frecuencia" schema="" catalog="eps" type="TABLE">
+      <column name="FRECUENCIA" sqlType="CHAR" precision="2" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="DESCRIP" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="NOMBRECORTO" sqlType="VARCHAR" precision="25" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="FRECUENCIA"/>
+    </table>
+    <table name="hor_parametros" schema="" catalog="eps" type="TABLE">
+      <column name="CURSO" sqlType="VARCHAR" precision="9" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="FINICIO_NOEPS" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="FFIN_NOEPS" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="HINICIO_NOEPS" sqlType="TIME" precision="8" scale="0" nullable="true" jdbcType="92"/>
+      <column name="HFIN_NOEPS" sqlType="TIME" precision="8" scale="0" nullable="true" jdbcType="92"/>
+      <column name="FINICIO_EPS" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="FFIN_EPS" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="HINICIO_EPS" sqlType="TIME" precision="8" scale="0" nullable="true" jdbcType="92"/>
+      <column name="HFIN_EPS" sqlType="TIME" precision="8" scale="0" nullable="true" jdbcType="92"/>
+      <column name="HORASMEDIODIA" sqlType="DECIMAL" precision="4" scale="2" nullable="false" jdbcType="3" def="MC4wMA=="/>
+      <column name="AULASHORARIO" sqlType="ENUM" precision="8" scale="0" nullable="true" jdbcType="1" def="J1ZJUlRVQUwn"/>
+      <column name="MOSTRARLETRASLISTADO" sqlType="ENUM" precision="3" scale="0" nullable="false" jdbcType="1" def="J05PJw=="/>
+      <primary-key name="PRIMARY" columns="CURSO"/>
+      <foreign-key name="HOR_PARAMETROS_ibfk_1" columns="CURSO" ref-table="hor_ejercicios" ref-schema="" ref-catalog="eps" ref-columns="CURSO" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="planesestudios" schema="" catalog="eps" type="TABLE">
+      <column name="CODPLA" sqlType="VARCHAR" precision="5" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="NOMBRE" sqlType="VARCHAR" precision="200" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="CODTIT" sqlType="CHAR" precision="3" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="CPD" sqlType="CHAR" precision="1" scale="0" nullable="false" jdbcType="1" def="J04n"/>
+      <column name="TIPO" sqlType="ENUM" precision="10" scale="0" nullable="true" jdbcType="1"/>
+      <column name="CICLO" sqlType="ENUM" precision="2" scale="0" nullable="true" jdbcType="1" def="JzEn"/>
+      <column name="CREDITOS" sqlType="DECIMAL" precision="6" scale="2" nullable="false" jdbcType="3"/>
+      <primary-key name="PRIMARY" columns="CODPLA"/>
+      <index name="CODPLA" unique="false" columns="CODPLA,NOMBRE,CODTIT"/>
+    </table>
+    <table name="planesestudiostr" schema="" catalog="eps" type="TABLE">
+      <column name="CODPLA" sqlType="VARCHAR" precision="5" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="IDIOMA" sqlType="VARCHAR" precision="5" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="NOMBRE" sqlType="VARCHAR" precision="200" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="URLEXAMENES" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="CODPLA,IDIOMA"/>
+    </table>
+    <table name="tiposaula" schema="" catalog="eps" type="TABLE">
+      <column name="CODTIPOAULA" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="TIPOAULA" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="DESCRIP" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="CODEPS" sqlType="VARCHAR" precision="5" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="CODTIPOAULA"/>
+      <exported-key name="ASIGNATURASCURSOSACTIV_ibfk_2" table="asignaturascursosactiv" schema="" catalog="eps" columns="CODTIPOAULA"/>
+      <exported-key name="ASIGNATURASCURSOSACTIV_VOAP_ibfk_2" table="asignaturascursosactiv_voap" schema="" catalog="eps" columns="CODTIPOAULA"/>
+    </table>
+  </data-source>
+</component>

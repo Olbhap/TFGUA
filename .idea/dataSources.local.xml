@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - eps@localhost" uuid="01383689-39ae-4871-becc-9f7b1ce55fd0">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>eps.*</schema-pattern>
+      <default-schemas>eps.*</default-schemas>
+    </data-source>
+  </component>
+</project>
