@@ -8,7 +8,7 @@ include_once './src/Epi.php';
 Epi::setPath('base', './src');
 //cargamos el modulo route
 Epi::init('route','database','api');
-EpiDatabase::employ('mysql','eps','donpisoalicante.com','root','GhotHod4');
+EpiDatabase::employ('mysql','eps','localhost','root','GhotHod4');
 
 //seteamos rutas de acceso y funciones handlers
 getRoute()->get('/', 'home');
