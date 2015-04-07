@@ -8,7 +8,7 @@ include_once './src/Epi.php';
 Epi::setPath('base', './src');
 //cargamos el modulo route
 Epi::init('route','database','api');
-EpiDatabase::employ('mysql','eps','localhost','root','GhotHod4');
+EpiDatabase::employ('mysql','eps','localhost','root','');
 
 //seteamos rutas de acceso y funciones handlers
 getRoute()->get('/', 'home');
@@ -121,7 +121,7 @@ function delete_recurso_asignatura($asignatura,$actividad,$recurso) {
 
 function obtener_listado_actividades($asignatura) {
    $actividades = getDatabase()->all('select * from asignaturascursosactiv a, asignaturasactividades b where  a.CODASI = :asignatura
-                                      and a.CODACT = b.CODACT ',array(':asignatura'=>$asignatura));
+                                      and a.CODACT = b.CODACT and a.CURSO=2014',array(':asignatura'=>$asignatura));
     return salidaJSON($actividades);
 }
 
