@@ -8,7 +8,7 @@ include_once './src/Epi.php';
 Epi::setPath('base', './src');
 //cargamos el modulo route
 Epi::init('route','database','api');
-EpiDatabase::employ('mysql','eps','localhost','root','GhotHod4');
+EpiDatabase::employ('mysql','eps','localhost','root','password');
 //EpiDatabase::employ('mysql','eps','localhost','root','');
 
 //seteamos rutas de acceso y funciones handlers
