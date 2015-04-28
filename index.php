@@ -129,7 +129,7 @@ function obtener_listado_actividades($asignatura) {
 }
 
 function obtener_tipos_aulas() {
-    $tiposAula = getDatabase()->all('select * from tiposaulavoap');
+    $tiposAula = getDatabase()->all('select * from TIPOSAULAVOAP');
     return salidaJSON($tiposAula);
 }
 
