@@ -74,6 +74,8 @@ getRoute()->get('/asignaturas/(\d+)/actividades','obtener_listado_actividades');
  */
 getRoute()->get('/tipoactividades', 'obtener_tipos_actividades');
 
+getRoute()->get('/tiposAula','obtener_tipos_aulas');
+
 getRoute()->run();
 
 
@@ -124,6 +126,11 @@ function obtener_listado_actividades($asignatura) {
    $actividades = getDatabase()->all('select * from asignaturascursosactiv a, asignaturasactividades b where  a.CODASI = :asignatura
                                       and a.CODACT = b.CODACT and a.CURSO=2014',array(':asignatura'=>$asignatura));
     return salidaJSON($actividades);
+}
+
+function obtener_tipos_aulas() {
+    $tiposAula = getDatabase()->all('select * from tiposaulavoap');
+    return salidaJSON($tiposAula);
 }
 
 function salidaJSON ($resultado)
