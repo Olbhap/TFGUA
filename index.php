@@ -8,8 +8,8 @@ include_once './src/Epi.php';
 Epi::setPath('base', './src');
 //cargamos el modulo route
 Epi::init('route','database','api');
-EpiDatabase::employ('mysql','eps','localhost','root','GhotHod4');
-//EpiDatabase::employ('mysql','eps','localhost','root','');
+//EpiDatabase::employ('mysql','eps','localhost','root','GhotHod4');
+EpiDatabase::employ('mysql','eps','localhost','root','');
 
 //seteamos rutas de acceso y funciones handlers
 getRoute()->get('/', 'home');
@@ -59,6 +59,7 @@ getRoute()->get('/recursosdocentes', 'obtener_recursos_docentes');
 getRoute()->get('/titulaciones/(\w+)/curso/(\d+)/asignaturas', 'obtener_asignaturas_curso');
 
 getRoute()->post('/asignaturas/(\d+)/actividad/(\d+)/recursodocente','asignar_recurso_asignatura');
+getRoute()->post('/asignarTipoAulaAsignatura','asignar_tipoAula_asignatura');
 getRoute()->delete('/asignaturas/(\d+)/actividad/(\d+)/recursodocente/(\d+)','delete_recurso_asignatura');
 
 getRoute()->get('/asignaturas/(\d+)/actividades','obtener_listado_actividades');
@@ -74,7 +75,8 @@ getRoute()->get('/asignaturas/(\d+)/actividades','obtener_listado_actividades');
  */
 getRoute()->get('/tipoactividades', 'obtener_tipos_actividades');
 
-getRoute()->get('/tiposAula','obtener_tipos_aulas');
+getRoute()->get('/tiposAulaCentralizadas','obtener_tipos_aulasCentralizadas');
+getRoute()->get('/tiposAulaNoCentralizadas','obtener_tipos_aulasNoCentralizadas');
 
 getRoute()->run();
 
@@ -116,6 +118,15 @@ function obtener_tipos_actividades() {
 
 function asignar_recurso_asignatura($asignatura,$actividad) {
     echo $asignatura . $actividad;
+
+
+}function asignar_tipoAula_asignatura() {
+    $fileData = file_get_contents("php://input");
+    $data = json_decode($fileData);
+//    INSERT INTO table_name VALUES (value1,value2,value3,...);
+    $tipoAula = getDatabase()->execute('INSERT INTO asignaturascursosactiv VALUES (:curso,:codasi,:codact,0.30,:codtipoaula,0.00,0.00,0.00,0,0,0,0.00,:real,0.00)',
+        array(':curso'=>"2015-2016",':codasi'=>$data.codasi,':codact'=>$data.codact,':codtipoaula'=>$data.codtipoaula, ':real'=>"REAL"));
+    return salidaJSON($fileData);
 }
 
 function delete_recurso_asignatura($asignatura,$actividad,$recurso) {
@@ -128,9 +139,13 @@ function obtener_listado_actividades($asignatura) {
     return salidaJSON($actividades);
 }
 
-function obtener_tipos_aulas() {
-    $tiposAula = getDatabase()->all('select * from TIPOSAULAVOAP');
-    return salidaJSON($tiposAula);
+function obtener_tipos_aulasCentralizadas() {
+    $tiposAulaCentralizada = getDatabase()->all('select * from tiposaula WHERE TIPOAULA in ("01AULA","03DEPORTE","02INFORM","05LABDOC","04NO")');
+    return salidaJSON($tiposAulaCentralizada);
+}
+function obtener_tipos_aulasNoCentralizadas() {
+    $tiposAulaNoCentralizadas = getDatabase()->all('select * from tiposaula WHERE TIPOAULA not in ("01AULA","03DEPORTE","02INFORM","05LABDOC","04NO")');
+    return salidaJSON($tiposAulaNoCentralizadas);
 }
 
 function salidaJSON ($resultado)
