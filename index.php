@@ -63,6 +63,8 @@ getRoute()->post('/asignarTipoAulaAsignatura','asignar_tipoAula_asignatura');
 getRoute()->delete('/asignaturas/(\d+)/actividad/(\d+)/recursodocente/(\d+)','delete_recurso_asignatura');
 
 getRoute()->get('/asignaturas/(\d+)/actividades','obtener_listado_actividades');
+getRoute()->get('/asignaturas/(\d+)/actividad/(\d+)/curso/(.+)/aulasCentralizadas','obtener_listado_tiposAula_centralizadas');
+getRoute()->get('/asignaturas/(\d+)/actividad/(\d+)/curso/(.+)/aulasNoCentralizadas','obtener_listado_tiposAula_noCentralizadas');
 
 
 /*
@@ -123,10 +125,9 @@ function asignar_recurso_asignatura($asignatura,$actividad) {
 }function asignar_tipoAula_asignatura() {
     $fileData = file_get_contents("php://input");
     $data = json_decode($fileData);
-//    INSERT INTO table_name VALUES (value1,value2,value3,...);
     $tipoAula = getDatabase()->execute('INSERT INTO asignaturascursosactiv VALUES (:curso,:codasi,:codact,0.30,:codtipoaula,0.00,0.00,0.00,0,0,0,0.00,:real,0.00)',
-        array(':curso'=>"2015-2016",':codasi'=>$data.codasi,':codact'=>$data.codact,':codtipoaula'=>$data.codtipoaula, ':real'=>"REAL"));
-    return salidaJSON($fileData);
+        array(':curso'=>$data->curso,':codasi'=>$data->codasi,':codact'=>$data->codact,':codtipoaula'=>$data->CODTIPOAULA, ':real'=>"REAL"));
+    echo($tipoAula);
 }
 
 function delete_recurso_asignatura($asignatura,$actividad,$recurso) {
@@ -137,6 +138,19 @@ function obtener_listado_actividades($asignatura) {
    $actividades = getDatabase()->all('select * from asignaturascursosactiv a, asignaturasactividades b where  a.CODASI = :asignatura
                                       and a.CODACT = b.CODACT and a.CURSO=2014',array(':asignatura'=>$asignatura));
     return salidaJSON($actividades);
+}
+
+function obtener_listado_tiposAula_centralizadas($asignatura, $actividad, $curso) {
+    $tiposAula = getDatabase()->all('SELECT a.CODTIPOAULA, tip.TIPOAULA, tip.DESCRIP, tip.CODEPS FROM asignaturascursosactiv a, tiposaula tip
+            where a.CODACT = :codact AND a.CODASI = :codasi AND a.curso = :curso AND a.CODTIPOAULA = tip.CODTIPOAULA
+        AND tip.TIPOAULA IN ("01AULA","03DEPORTE","02INFORM","05LABDOC","04NO")', array(':codact'=>$actividad,':codasi'=>$asignatura,':curso'=>$curso));
+    return salidaJSON($tiposAula);
+
+}function obtener_listado_tiposAula_noCentralizadas($asignatura, $actividad, $curso) {
+    $tiposAula = getDatabase()->all('SELECT a.CODTIPOAULA, tip.TIPOAULA, tip.DESCRIP, tip.CODEPS FROM asignaturascursosactiv a, tiposaula tip
+            where a.CODACT = :codact AND a.CODASI = :codasi AND a.curso = :curso AND a.CODTIPOAULA = tip.CODTIPOAULA
+        AND tip.TIPOAULA NOT IN ("01AULA","03DEPORTE","02INFORM","05LABDOC","04NO")', array(':codact'=>$actividad,':codasi'=>$asignatura,':curso'=>$curso));
+    return salidaJSON($tiposAula);
 }
 
 function obtener_tipos_aulasCentralizadas() {
