@@ -65,6 +65,7 @@ getRoute()->delete('/asignaturas/(\d+)/actividad/(\d+)/recursodocente/(\d+)','de
 getRoute()->get('/asignaturas/(\d+)/actividades','obtener_listado_actividades');
 getRoute()->get('/asignaturas/(\d+)/actividad/(\d+)/curso/(.+)/aulasCentralizadas','obtener_listado_tiposAula_centralizadas');
 getRoute()->get('/asignaturas/(\d+)/actividad/(\d+)/curso/(.+)/aulasNoCentralizadas','obtener_listado_tiposAula_noCentralizadas');
+getRoute()->delete('/asignaturas/(\d+)/actividad/(\d+)/curso/(.+)/tipoAula/(\d+)','remove_tiposAula_asignatura_actividad');
 
 
 /*
@@ -125,8 +126,9 @@ function asignar_recurso_asignatura($asignatura,$actividad) {
 }function asignar_tipoAula_asignatura() {
     $fileData = file_get_contents("php://input");
     $data = json_decode($fileData);
-    $tipoAula = getDatabase()->execute('INSERT INTO asignaturascursosactiv VALUES (:curso,:codasi,:codact,0.30,:codtipoaula,0.00,0.00,0.00,0,0,0,0.00,:real,0.00)',
-        array(':curso'=>$data->curso,':codasi'=>$data->codasi,':codact'=>$data->codact,':codtipoaula'=>$data->CODTIPOAULA, ':real'=>"REAL"));
+    $tipoAula = getDatabase()->execute('UPDATE asignaturascursosactiv set CODTIPOAULA = :codtipoaula
+                                        WHERE CODASI = :codasi AND CODACT = :codact AND CURSO = :curso',
+        array(':curso'=>$data->curso,':codasi'=>$data->codasi,':codact'=>$data->codact,':codtipoaula'=>$data->CODTIPOAULA));
     echo($tipoAula);
 }
 
@@ -138,6 +140,13 @@ function obtener_listado_actividades($asignatura) {
    $actividades = getDatabase()->all('select * from asignaturascursosactiv a, asignaturasactividades b where  a.CODASI = :asignatura
                                       and a.CODACT = b.CODACT and a.CURSO=2014',array(':asignatura'=>$asignatura));
     return salidaJSON($actividades);
+}
+
+function remove_tiposAula_asignatura_actividad($asignatura, $actividad, $curso, $tipoAula) {
+    $resultado = getDatabase()->execute('UPDATE asignaturascursosactiv SET CODTIPOAULA = -10
+                                          WHERE CODASI = :asignatura AND CODACT = :actividad AND CURSO = :curso AND CODTIPOAULA = :tipoaula',
+                                            array('asignatura'=>$asignatura, 'actividad'=>$actividad, 'curso'=>$curso, 'tipoaula'=>$tipoAula));
+    echo($resultado);
 }
 
 function obtener_listado_tiposAula_centralizadas($asignatura, $actividad, $curso) {
