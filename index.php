@@ -66,6 +66,7 @@ getRoute()->get('/asignaturas/(\d+)/actividades','obtener_listado_actividades');
 getRoute()->get('/asignaturas/(\d+)/actividad/(\d+)/curso/(.+)/aulasCentralizadas','obtener_listado_tiposAula_centralizadas');
 getRoute()->get('/asignaturas/(\d+)/actividad/(\d+)/curso/(.+)/aulasNoCentralizadas','obtener_listado_tiposAula_noCentralizadas');
 getRoute()->delete('/asignaturas/(\d+)/actividad/(\d+)/curso/(.+)/tipoAula/(\d+)','remove_tiposAula_asignatura_actividad');
+getRoute()->delete('/asignaturas/(\d+)/curso/(.+)/tipoAula/','remove_tiposAula_asignatura');
 
 
 /*
@@ -146,6 +147,12 @@ function remove_tiposAula_asignatura_actividad($asignatura, $actividad, $curso, 
     $resultado = getDatabase()->execute('UPDATE asignaturascursosactiv SET CODTIPOAULA = -10
                                           WHERE CODASI = :asignatura AND CODACT = :actividad AND CURSO = :curso AND CODTIPOAULA = :tipoaula',
                                             array('asignatura'=>$asignatura, 'actividad'=>$actividad, 'curso'=>$curso, 'tipoaula'=>$tipoAula));
+    echo($resultado);
+}
+function remove_tiposAula_asignatura($asignatura, $curso) {
+    $resultado = getDatabase()->execute('UPDATE asignaturascursosactiv SET CODTIPOAULA = -10
+                                          WHERE CODASI = :asignatura AND CURSO = :curso',
+                                            array('asignatura'=>$asignatura, 'curso'=>$curso));
     echo($resultado);
 }
 
