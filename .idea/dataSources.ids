@@ -200,7 +200,7 @@
       <column name="CODCAT" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="DESCRIP" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="CODCAT"/>
-      <exported-key name="TIPOSRECURSO_ibfk_1" table="tiposrecurso" schema="" catalog="eps" columns="CODCAT"/>
+      <exported-key name="fk_CODCATRECURSO" table="tiposrecurso" schema="" catalog="eps" columns="CODCATRECURSO"/>
     </table>
     <table name="hor_parametros" schema="" catalog="eps" type="TABLE">
       <column name="CURSO" sqlType="VARCHAR" precision="9" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
@@ -271,11 +271,12 @@
     <table name="tiposrecurso" schema="" catalog="eps" type="TABLE">
       <column name="TIPORECURSO" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="DESCRIP" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
-      <column name="CODCAT" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="CODCATRECURSO" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="TIPORECURSO"/>
-      <foreign-key name="TIPOSRECURSO_ibfk_1" columns="CODCAT" ref-table="categoriasrecurso" ref-schema="" ref-catalog="eps" ref-columns="CODCAT" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="fk_CODCATRECURSO" columns="CODCATRECURSO" ref-table="categoriasrecurso" ref-schema="" ref-catalog="eps" ref-columns="CODCAT" update-rule="3" delete-rule="3" deferrability="2"/>
       <exported-key name="ASIGNATURASCURSOSACTIVRECURSOS_ibfk_4" table="asignaturascursosactivrecursos" schema="" catalog="eps" columns="TIPORECURSO"/>
       <exported-key name="ASIGNATURASCURSOSACTIVRECURSOS_ibfk_2" table="asignaturascursosactivrecursos" schema="" catalog="eps" columns="TIPORECURSO"/>
+      <index name="idcatrecurso_idx" unique="false" columns="CODCATRECURSO"/>
     </table>
   </data-source>
 </component>

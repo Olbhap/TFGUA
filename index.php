@@ -97,7 +97,9 @@ function obtener_titulaciones() {
 }
 
 function obtener_tipos_recursos() {
-    return salidaJSON('[{ codigo"   : "xxx",    "nombre"   : "yyy" }]');
+    $recursos = getDatabase()->all('select t.*, c.DESCRIP AS CATDESCRIP from tiposrecurso t, categoriasrecurso c
+                              WHERE t.CODCATRECURSO = c.CODCAT');
+    return salidaJSON($recursos);
 }
 
 function obtener_recursos_docentes() {
