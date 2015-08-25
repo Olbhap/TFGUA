@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ac87404-7157-417d-85d5-bf2649d1deb4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -42,6 +40,42 @@
         <option name="myItemId" value="eps" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="tiposrecurso" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - eps@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="eps" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - eps@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="eps" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="asignaturascursosactivrecursos" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
     </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
@@ -70,32 +104,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3418647" vertical-offset="0" max-vertical-offset="3536">
-              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            <state vertical-scroll-proportion="-3.090909" vertical-offset="0" max-vertical-offset="3621">
+              <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
               <folding>
-                <marker date="1440354600204" expanded="true" signature="2926:2954" placeholder="SELECT * FRO..planesestudios..." />
-                <marker date="1440354600204" expanded="true" signature="2926:2971" placeholder="SELECT * FRO..planesestudios..." />
-                <marker date="1440354600204" expanded="true" signature="2926:2999" placeholder="SELECT * FRO..planesestudios..." />
-                <marker date="1440354600204" expanded="true" signature="3114:3253" placeholder="select t.*, ..tiposrecurso..." />
-                <marker date="1440354600204" expanded="true" signature="3370:3384" placeholder="SELECT * FRO..hor_dotaciones..." />
-                <marker date="1440354600204" expanded="true" signature="3370:3393" placeholder="SELECT * FRO..tiposaula..." />
-                <marker date="1440354600204" expanded="true" signature="3533:3540" placeholder="select * fro..asignaturas..." />
-                <marker date="1440354600204" expanded="true" signature="3533:3711" placeholder="select a.* f..asignaturas..." />
-                <marker date="1440354600204" expanded="true" signature="4180:4343" placeholder="UPDATE asign..." />
-                <marker date="1440354600204" expanded="true" signature="4186:4240" placeholder="INSERT INTO ..." />
-                <marker date="1440354600204" expanded="true" signature="4704:4860" placeholder="select * fro..asignaturascursosactiv..." />
-                <marker date="1440354600204" expanded="true" signature="4704:4877" placeholder="select * fro..asignaturascursosactiv..." />
-                <marker date="1440354600204" expanded="true" signature="5089:5280" placeholder="UPDATE asign..." />
-                <marker date="1440354600204" expanded="true" signature="5095:5280" placeholder="DELETE FROM ..." />
-                <marker date="1440354600204" expanded="true" signature="5552:5691" placeholder="UPDATE asign..." />
-                <marker date="1440354600204" expanded="true" signature="5552:5744" placeholder="UPDATE asign..." />
-                <marker date="1440354600204" expanded="true" signature="5936:6237" placeholder="SELECT a.COD..asignaturascursosactiv..." />
-                <marker date="1440354600204" expanded="true" signature="6471:6776" placeholder="SELECT a.COD..asignaturascursosactiv..." />
-                <marker date="1440354600204" expanded="true" signature="6983:7076" placeholder="select * fro..tiposaula..." />
-                <marker date="1440354600204" expanded="true" signature="7229:7326" placeholder="select * fro..tiposaula..." />
+                <marker date="1440524676262" expanded="true" signature="2899:2927" placeholder="SELECT * FRO..planesestudios..." />
+                <marker date="1440524676262" expanded="true" signature="2899:2944" placeholder="SELECT * FRO..planesestudios..." />
+                <marker date="1440524676262" expanded="true" signature="2899:2972" placeholder="SELECT * FRO..planesestudios..." />
+                <marker date="1440524676262" expanded="true" signature="3087:3226" placeholder="select t.*, ..tiposrecurso..." />
+                <marker date="1440524676262" expanded="true" signature="3343:3357" placeholder="SELECT * FRO..hor_dotaciones..." />
+                <marker date="1440524676262" expanded="true" signature="3343:3366" placeholder="SELECT * FRO..tiposaula..." />
+                <marker date="1440524676262" expanded="true" signature="3506:3513" placeholder="select * fro..asignaturas..." />
+                <marker date="1440524676262" expanded="true" signature="3506:3684" placeholder="select a.* f..asignaturas..." />
+                <marker date="1440524676262" expanded="true" signature="4050:4191" placeholder="INSERT INTO ..." />
+                <marker date="1440524676262" expanded="true" signature="4050:4208" placeholder="INSERT INTO ..." />
+                <marker date="1440524676262" expanded="true" signature="4128:4191" placeholder="UPDATE asign..." />
+                <marker date="1440524676262" expanded="true" signature="4509:4672" placeholder="UPDATE asign..." />
+                <marker date="1440524676262" expanded="true" signature="4515:4569" placeholder="INSERT INTO ..." />
+                <marker date="1440524676262" expanded="true" signature="5033:5189" placeholder="select * fro..asignaturascursosactiv..." />
+                <marker date="1440524676262" expanded="true" signature="5033:5206" placeholder="select * fro..asignaturascursosactiv..." />
+                <marker date="1440524676262" expanded="true" signature="5418:5609" placeholder="UPDATE asign..." />
+                <marker date="1440524676262" expanded="true" signature="5424:5609" placeholder="DELETE FROM ..." />
+                <marker date="1440524676262" expanded="true" signature="5881:6020" placeholder="UPDATE asign..." />
+                <marker date="1440524676262" expanded="true" signature="5881:6073" placeholder="UPDATE asign..." />
+                <marker date="1440524676262" expanded="true" signature="6265:6566" placeholder="SELECT a.COD..asignaturascursosactiv..." />
+                <marker date="1440524676262" expanded="true" signature="6800:7105" placeholder="SELECT a.COD..asignaturascursosactiv..." />
+                <marker date="1440524676262" expanded="true" signature="7312:7405" placeholder="select * fro..tiposaula..." />
+                <marker date="1440524676262" expanded="true" signature="7558:7655" placeholder="select * fro..tiposaula..." />
               </folding>
             </state>
           </provider>
@@ -121,14 +158,14 @@
       <file leaf-file-name="MySQL - eps@localhost" pinned="false" current-in-tab="false">
         <entry file="dbDummy://db-console:/7cf4b17c/01383689-39ae-4871-becc-9f7b1ce55fd0/">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.56666666" vertical-offset="0" max-vertical-offset="136">
+            <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="136">
               <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="eps.asignaturascursosactivrecursos" pinned="false" current-in-tab="false">
+      <file leaf-file-name="eps.asignaturascursosactivrecursos" pinned="false" current-in-tab="true">
         <entry file="dbDummy://dbtable:/7cf4b17c/01383689-39ae-4871-becc-9f7b1ce55fd0/eps..asignaturascursosactivrecursos">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
@@ -151,7 +188,7 @@
             </state>
           </provider>
           <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="187">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -291,20 +328,17 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
     <configuration default="true" type="com.intellij.database.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
       <option name="VM_PARAMETERS" value="" />
       <option name="USER_CFG_CLASS" />
       <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
     <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
       <BehatRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
@@ -314,6 +348,9 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="1">
@@ -409,35 +446,41 @@
       <option name="project" value="LOCAL" />
       <updated>1440263534623</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Lista de recursos. Dinámico, desde DB">
+      <created>1440354631516</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1440354631516</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39655173" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="976" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295964" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1924307" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1359275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1369936" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32950193" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39655173" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="976" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -464,7 +507,8 @@
     <MESSAGE value="Añadida al API los tipoAula.&#10;GET de tipoAula" />
     <MESSAGE value="Persistencia TIPO AULA" />
     <MESSAGE value="Servidor donpisoalicante.com" />
-    <option name="LAST_COMMIT_MESSAGE" value="Servidor donpisoalicante.com" />
+    <MESSAGE value="Lista de recursos. Dinámico, desde DB" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lista de recursos. Dinámico, desde DB" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -478,26 +522,29 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2601">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1440354600204" expanded="true" signature="2926:2954" placeholder="SELECT * FRO..planesestudios..." />
-            <marker date="1440354600204" expanded="true" signature="2926:2971" placeholder="SELECT * FRO..planesestudios..." />
-            <marker date="1440354600204" expanded="true" signature="2926:2999" placeholder="SELECT * FRO..planesestudios..." />
-            <marker date="1440354600204" expanded="true" signature="3114:3253" placeholder="select t.*, ..tiposrecurso..." />
-            <marker date="1440354600204" expanded="true" signature="3370:3384" placeholder="SELECT * FRO..hor_dotaciones..." />
-            <marker date="1440354600204" expanded="true" signature="3370:3393" placeholder="SELECT * FRO..tiposaula..." />
-            <marker date="1440354600204" expanded="true" signature="3533:3540" placeholder="select * fro..asignaturas..." />
-            <marker date="1440354600204" expanded="true" signature="3533:3711" placeholder="select a.* f..asignaturas..." />
-            <marker date="1440354600204" expanded="true" signature="4180:4343" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="4186:4240" placeholder="INSERT INTO ..." />
-            <marker date="1440354600204" expanded="true" signature="4704:4860" placeholder="select * fro..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="4704:4877" placeholder="select * fro..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="5089:5280" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="5095:5280" placeholder="DELETE FROM ..." />
-            <marker date="1440354600204" expanded="true" signature="5552:5691" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="5552:5744" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="5936:6237" placeholder="SELECT a.COD..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="6471:6776" placeholder="SELECT a.COD..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="6983:7076" placeholder="select * fro..tiposaula..." />
-            <marker date="1440354600204" expanded="true" signature="7229:7326" placeholder="select * fro..tiposaula..." />
+            <marker date="1440524676262" expanded="true" signature="2899:2927" placeholder="SELECT * FRO..planesestudios..." />
+            <marker date="1440524676262" expanded="true" signature="2899:2944" placeholder="SELECT * FRO..planesestudios..." />
+            <marker date="1440524676262" expanded="true" signature="2899:2972" placeholder="SELECT * FRO..planesestudios..." />
+            <marker date="1440524676262" expanded="true" signature="3087:3226" placeholder="select t.*, ..tiposrecurso..." />
+            <marker date="1440524676262" expanded="true" signature="3343:3357" placeholder="SELECT * FRO..hor_dotaciones..." />
+            <marker date="1440524676262" expanded="true" signature="3343:3366" placeholder="SELECT * FRO..tiposaula..." />
+            <marker date="1440524676262" expanded="true" signature="3506:3513" placeholder="select * fro..asignaturas..." />
+            <marker date="1440524676262" expanded="true" signature="3506:3684" placeholder="select a.* f..asignaturas..." />
+            <marker date="1440524676262" expanded="true" signature="4050:4191" placeholder="INSERT INTO ..." />
+            <marker date="1440524676262" expanded="true" signature="4050:4208" placeholder="INSERT INTO ..." />
+            <marker date="1440524676262" expanded="true" signature="4128:4191" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="4509:4672" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="4515:4569" placeholder="INSERT INTO ..." />
+            <marker date="1440524676262" expanded="true" signature="5033:5189" placeholder="select * fro..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="5033:5206" placeholder="select * fro..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="5418:5609" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="5424:5609" placeholder="DELETE FROM ..." />
+            <marker date="1440524676262" expanded="true" signature="5881:6020" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="5881:6073" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="6265:6566" placeholder="SELECT a.COD..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="6800:7105" placeholder="SELECT a.COD..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="7312:7405" placeholder="select * fro..tiposaula..." />
+            <marker date="1440524676262" expanded="true" signature="7558:7655" placeholder="select * fro..tiposaula..." />
           </folding>
         </state>
       </provider>
@@ -521,26 +568,29 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1440354600204" expanded="true" signature="2926:2954" placeholder="SELECT * FRO..planesestudios..." />
-            <marker date="1440354600204" expanded="true" signature="2926:2971" placeholder="SELECT * FRO..planesestudios..." />
-            <marker date="1440354600204" expanded="true" signature="2926:2999" placeholder="SELECT * FRO..planesestudios..." />
-            <marker date="1440354600204" expanded="true" signature="3114:3253" placeholder="select t.*, ..tiposrecurso..." />
-            <marker date="1440354600204" expanded="true" signature="3370:3384" placeholder="SELECT * FRO..hor_dotaciones..." />
-            <marker date="1440354600204" expanded="true" signature="3370:3393" placeholder="SELECT * FRO..tiposaula..." />
-            <marker date="1440354600204" expanded="true" signature="3533:3540" placeholder="select * fro..asignaturas..." />
-            <marker date="1440354600204" expanded="true" signature="3533:3711" placeholder="select a.* f..asignaturas..." />
-            <marker date="1440354600204" expanded="true" signature="4180:4343" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="4186:4240" placeholder="INSERT INTO ..." />
-            <marker date="1440354600204" expanded="true" signature="4704:4860" placeholder="select * fro..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="4704:4877" placeholder="select * fro..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="5089:5280" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="5095:5280" placeholder="DELETE FROM ..." />
-            <marker date="1440354600204" expanded="true" signature="5552:5691" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="5552:5744" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="5936:6237" placeholder="SELECT a.COD..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="6471:6776" placeholder="SELECT a.COD..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="6983:7076" placeholder="select * fro..tiposaula..." />
-            <marker date="1440354600204" expanded="true" signature="7229:7326" placeholder="select * fro..tiposaula..." />
+            <marker date="1440524676262" expanded="true" signature="2899:2927" placeholder="SELECT * FRO..planesestudios..." />
+            <marker date="1440524676262" expanded="true" signature="2899:2944" placeholder="SELECT * FRO..planesestudios..." />
+            <marker date="1440524676262" expanded="true" signature="2899:2972" placeholder="SELECT * FRO..planesestudios..." />
+            <marker date="1440524676262" expanded="true" signature="3087:3226" placeholder="select t.*, ..tiposrecurso..." />
+            <marker date="1440524676262" expanded="true" signature="3343:3357" placeholder="SELECT * FRO..hor_dotaciones..." />
+            <marker date="1440524676262" expanded="true" signature="3343:3366" placeholder="SELECT * FRO..tiposaula..." />
+            <marker date="1440524676262" expanded="true" signature="3506:3513" placeholder="select * fro..asignaturas..." />
+            <marker date="1440524676262" expanded="true" signature="3506:3684" placeholder="select a.* f..asignaturas..." />
+            <marker date="1440524676262" expanded="true" signature="4050:4191" placeholder="INSERT INTO ..." />
+            <marker date="1440524676262" expanded="true" signature="4050:4208" placeholder="INSERT INTO ..." />
+            <marker date="1440524676262" expanded="true" signature="4128:4191" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="4509:4672" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="4515:4569" placeholder="INSERT INTO ..." />
+            <marker date="1440524676262" expanded="true" signature="5033:5189" placeholder="select * fro..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="5033:5206" placeholder="select * fro..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="5418:5609" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="5424:5609" placeholder="DELETE FROM ..." />
+            <marker date="1440524676262" expanded="true" signature="5881:6020" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="5881:6073" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="6265:6566" placeholder="SELECT a.COD..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="6800:7105" placeholder="SELECT a.COD..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="7312:7405" placeholder="select * fro..tiposaula..." />
+            <marker date="1440524676262" expanded="true" signature="7558:7655" placeholder="select * fro..tiposaula..." />
           </folding>
         </state>
       </provider>
@@ -564,26 +614,29 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1440354600204" expanded="true" signature="2926:2954" placeholder="SELECT * FRO..planesestudios..." />
-            <marker date="1440354600204" expanded="true" signature="2926:2971" placeholder="SELECT * FRO..planesestudios..." />
-            <marker date="1440354600204" expanded="true" signature="2926:2999" placeholder="SELECT * FRO..planesestudios..." />
-            <marker date="1440354600204" expanded="true" signature="3114:3253" placeholder="select t.*, ..tiposrecurso..." />
-            <marker date="1440354600204" expanded="true" signature="3370:3384" placeholder="SELECT * FRO..hor_dotaciones..." />
-            <marker date="1440354600204" expanded="true" signature="3370:3393" placeholder="SELECT * FRO..tiposaula..." />
-            <marker date="1440354600204" expanded="true" signature="3533:3540" placeholder="select * fro..asignaturas..." />
-            <marker date="1440354600204" expanded="true" signature="3533:3711" placeholder="select a.* f..asignaturas..." />
-            <marker date="1440354600204" expanded="true" signature="4180:4343" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="4186:4240" placeholder="INSERT INTO ..." />
-            <marker date="1440354600204" expanded="true" signature="4704:4860" placeholder="select * fro..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="4704:4877" placeholder="select * fro..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="5089:5280" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="5095:5280" placeholder="DELETE FROM ..." />
-            <marker date="1440354600204" expanded="true" signature="5552:5691" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="5552:5744" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="5936:6237" placeholder="SELECT a.COD..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="6471:6776" placeholder="SELECT a.COD..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="6983:7076" placeholder="select * fro..tiposaula..." />
-            <marker date="1440354600204" expanded="true" signature="7229:7326" placeholder="select * fro..tiposaula..." />
+            <marker date="1440524676262" expanded="true" signature="2899:2927" placeholder="SELECT * FRO..planesestudios..." />
+            <marker date="1440524676262" expanded="true" signature="2899:2944" placeholder="SELECT * FRO..planesestudios..." />
+            <marker date="1440524676262" expanded="true" signature="2899:2972" placeholder="SELECT * FRO..planesestudios..." />
+            <marker date="1440524676262" expanded="true" signature="3087:3226" placeholder="select t.*, ..tiposrecurso..." />
+            <marker date="1440524676262" expanded="true" signature="3343:3357" placeholder="SELECT * FRO..hor_dotaciones..." />
+            <marker date="1440524676262" expanded="true" signature="3343:3366" placeholder="SELECT * FRO..tiposaula..." />
+            <marker date="1440524676262" expanded="true" signature="3506:3513" placeholder="select * fro..asignaturas..." />
+            <marker date="1440524676262" expanded="true" signature="3506:3684" placeholder="select a.* f..asignaturas..." />
+            <marker date="1440524676262" expanded="true" signature="4050:4191" placeholder="INSERT INTO ..." />
+            <marker date="1440524676262" expanded="true" signature="4050:4208" placeholder="INSERT INTO ..." />
+            <marker date="1440524676262" expanded="true" signature="4128:4191" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="4509:4672" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="4515:4569" placeholder="INSERT INTO ..." />
+            <marker date="1440524676262" expanded="true" signature="5033:5189" placeholder="select * fro..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="5033:5206" placeholder="select * fro..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="5418:5609" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="5424:5609" placeholder="DELETE FROM ..." />
+            <marker date="1440524676262" expanded="true" signature="5881:6020" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="5881:6073" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="6265:6566" placeholder="SELECT a.COD..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="6800:7105" placeholder="SELECT a.COD..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="7312:7405" placeholder="select * fro..tiposaula..." />
+            <marker date="1440524676262" expanded="true" signature="7558:7655" placeholder="select * fro..tiposaula..." />
           </folding>
         </state>
       </provider>
@@ -600,26 +653,29 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1440354600204" expanded="true" signature="2926:2954" placeholder="SELECT * FRO..planesestudios..." />
-            <marker date="1440354600204" expanded="true" signature="2926:2971" placeholder="SELECT * FRO..planesestudios..." />
-            <marker date="1440354600204" expanded="true" signature="2926:2999" placeholder="SELECT * FRO..planesestudios..." />
-            <marker date="1440354600204" expanded="true" signature="3114:3253" placeholder="select t.*, ..tiposrecurso..." />
-            <marker date="1440354600204" expanded="true" signature="3370:3384" placeholder="SELECT * FRO..hor_dotaciones..." />
-            <marker date="1440354600204" expanded="true" signature="3370:3393" placeholder="SELECT * FRO..tiposaula..." />
-            <marker date="1440354600204" expanded="true" signature="3533:3540" placeholder="select * fro..asignaturas..." />
-            <marker date="1440354600204" expanded="true" signature="3533:3711" placeholder="select a.* f..asignaturas..." />
-            <marker date="1440354600204" expanded="true" signature="4180:4343" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="4186:4240" placeholder="INSERT INTO ..." />
-            <marker date="1440354600204" expanded="true" signature="4704:4860" placeholder="select * fro..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="4704:4877" placeholder="select * fro..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="5089:5280" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="5095:5280" placeholder="DELETE FROM ..." />
-            <marker date="1440354600204" expanded="true" signature="5552:5691" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="5552:5744" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="5936:6237" placeholder="SELECT a.COD..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="6471:6776" placeholder="SELECT a.COD..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="6983:7076" placeholder="select * fro..tiposaula..." />
-            <marker date="1440354600204" expanded="true" signature="7229:7326" placeholder="select * fro..tiposaula..." />
+            <marker date="1440524676262" expanded="true" signature="2899:2927" placeholder="SELECT * FRO..planesestudios..." />
+            <marker date="1440524676262" expanded="true" signature="2899:2944" placeholder="SELECT * FRO..planesestudios..." />
+            <marker date="1440524676262" expanded="true" signature="2899:2972" placeholder="SELECT * FRO..planesestudios..." />
+            <marker date="1440524676262" expanded="true" signature="3087:3226" placeholder="select t.*, ..tiposrecurso..." />
+            <marker date="1440524676262" expanded="true" signature="3343:3357" placeholder="SELECT * FRO..hor_dotaciones..." />
+            <marker date="1440524676262" expanded="true" signature="3343:3366" placeholder="SELECT * FRO..tiposaula..." />
+            <marker date="1440524676262" expanded="true" signature="3506:3513" placeholder="select * fro..asignaturas..." />
+            <marker date="1440524676262" expanded="true" signature="3506:3684" placeholder="select a.* f..asignaturas..." />
+            <marker date="1440524676262" expanded="true" signature="4050:4191" placeholder="INSERT INTO ..." />
+            <marker date="1440524676262" expanded="true" signature="4050:4208" placeholder="INSERT INTO ..." />
+            <marker date="1440524676262" expanded="true" signature="4128:4191" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="4509:4672" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="4515:4569" placeholder="INSERT INTO ..." />
+            <marker date="1440524676262" expanded="true" signature="5033:5189" placeholder="select * fro..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="5033:5206" placeholder="select * fro..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="5418:5609" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="5424:5609" placeholder="DELETE FROM ..." />
+            <marker date="1440524676262" expanded="true" signature="5881:6020" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="5881:6073" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="6265:6566" placeholder="SELECT a.COD..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="6800:7105" placeholder="SELECT a.COD..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="7312:7405" placeholder="select * fro..tiposaula..." />
+            <marker date="1440524676262" expanded="true" signature="7558:7655" placeholder="select * fro..tiposaula..." />
           </folding>
         </state>
       </provider>
@@ -636,26 +692,29 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1440354600204" expanded="true" signature="2926:2954" placeholder="SELECT * FRO..planesestudios..." />
-            <marker date="1440354600204" expanded="true" signature="2926:2971" placeholder="SELECT * FRO..planesestudios..." />
-            <marker date="1440354600204" expanded="true" signature="2926:2999" placeholder="SELECT * FRO..planesestudios..." />
-            <marker date="1440354600204" expanded="true" signature="3114:3253" placeholder="select t.*, ..tiposrecurso..." />
-            <marker date="1440354600204" expanded="true" signature="3370:3384" placeholder="SELECT * FRO..hor_dotaciones..." />
-            <marker date="1440354600204" expanded="true" signature="3370:3393" placeholder="SELECT * FRO..tiposaula..." />
-            <marker date="1440354600204" expanded="true" signature="3533:3540" placeholder="select * fro..asignaturas..." />
-            <marker date="1440354600204" expanded="true" signature="3533:3711" placeholder="select a.* f..asignaturas..." />
-            <marker date="1440354600204" expanded="true" signature="4180:4343" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="4186:4240" placeholder="INSERT INTO ..." />
-            <marker date="1440354600204" expanded="true" signature="4704:4860" placeholder="select * fro..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="4704:4877" placeholder="select * fro..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="5089:5280" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="5095:5280" placeholder="DELETE FROM ..." />
-            <marker date="1440354600204" expanded="true" signature="5552:5691" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="5552:5744" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="5936:6237" placeholder="SELECT a.COD..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="6471:6776" placeholder="SELECT a.COD..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="6983:7076" placeholder="select * fro..tiposaula..." />
-            <marker date="1440354600204" expanded="true" signature="7229:7326" placeholder="select * fro..tiposaula..." />
+            <marker date="1440524676262" expanded="true" signature="2899:2927" placeholder="SELECT * FRO..planesestudios..." />
+            <marker date="1440524676262" expanded="true" signature="2899:2944" placeholder="SELECT * FRO..planesestudios..." />
+            <marker date="1440524676262" expanded="true" signature="2899:2972" placeholder="SELECT * FRO..planesestudios..." />
+            <marker date="1440524676262" expanded="true" signature="3087:3226" placeholder="select t.*, ..tiposrecurso..." />
+            <marker date="1440524676262" expanded="true" signature="3343:3357" placeholder="SELECT * FRO..hor_dotaciones..." />
+            <marker date="1440524676262" expanded="true" signature="3343:3366" placeholder="SELECT * FRO..tiposaula..." />
+            <marker date="1440524676262" expanded="true" signature="3506:3513" placeholder="select * fro..asignaturas..." />
+            <marker date="1440524676262" expanded="true" signature="3506:3684" placeholder="select a.* f..asignaturas..." />
+            <marker date="1440524676262" expanded="true" signature="4050:4191" placeholder="INSERT INTO ..." />
+            <marker date="1440524676262" expanded="true" signature="4050:4208" placeholder="INSERT INTO ..." />
+            <marker date="1440524676262" expanded="true" signature="4128:4191" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="4509:4672" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="4515:4569" placeholder="INSERT INTO ..." />
+            <marker date="1440524676262" expanded="true" signature="5033:5189" placeholder="select * fro..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="5033:5206" placeholder="select * fro..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="5418:5609" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="5424:5609" placeholder="DELETE FROM ..." />
+            <marker date="1440524676262" expanded="true" signature="5881:6020" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="5881:6073" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="6265:6566" placeholder="SELECT a.COD..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="6800:7105" placeholder="SELECT a.COD..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="7312:7405" placeholder="select * fro..tiposaula..." />
+            <marker date="1440524676262" expanded="true" signature="7558:7655" placeholder="select * fro..tiposaula..." />
           </folding>
         </state>
       </provider>
@@ -686,26 +745,29 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1440354600204" expanded="true" signature="2926:2954" placeholder="SELECT * FRO..planesestudios..." />
-            <marker date="1440354600204" expanded="true" signature="2926:2971" placeholder="SELECT * FRO..planesestudios..." />
-            <marker date="1440354600204" expanded="true" signature="2926:2999" placeholder="SELECT * FRO..planesestudios..." />
-            <marker date="1440354600204" expanded="true" signature="3114:3253" placeholder="select t.*, ..tiposrecurso..." />
-            <marker date="1440354600204" expanded="true" signature="3370:3384" placeholder="SELECT * FRO..hor_dotaciones..." />
-            <marker date="1440354600204" expanded="true" signature="3370:3393" placeholder="SELECT * FRO..tiposaula..." />
-            <marker date="1440354600204" expanded="true" signature="3533:3540" placeholder="select * fro..asignaturas..." />
-            <marker date="1440354600204" expanded="true" signature="3533:3711" placeholder="select a.* f..asignaturas..." />
-            <marker date="1440354600204" expanded="true" signature="4180:4343" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="4186:4240" placeholder="INSERT INTO ..." />
-            <marker date="1440354600204" expanded="true" signature="4704:4860" placeholder="select * fro..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="4704:4877" placeholder="select * fro..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="5089:5280" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="5095:5280" placeholder="DELETE FROM ..." />
-            <marker date="1440354600204" expanded="true" signature="5552:5691" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="5552:5744" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="5936:6237" placeholder="SELECT a.COD..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="6471:6776" placeholder="SELECT a.COD..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="6983:7076" placeholder="select * fro..tiposaula..." />
-            <marker date="1440354600204" expanded="true" signature="7229:7326" placeholder="select * fro..tiposaula..." />
+            <marker date="1440524676262" expanded="true" signature="2899:2927" placeholder="SELECT * FRO..planesestudios..." />
+            <marker date="1440524676262" expanded="true" signature="2899:2944" placeholder="SELECT * FRO..planesestudios..." />
+            <marker date="1440524676262" expanded="true" signature="2899:2972" placeholder="SELECT * FRO..planesestudios..." />
+            <marker date="1440524676262" expanded="true" signature="3087:3226" placeholder="select t.*, ..tiposrecurso..." />
+            <marker date="1440524676262" expanded="true" signature="3343:3357" placeholder="SELECT * FRO..hor_dotaciones..." />
+            <marker date="1440524676262" expanded="true" signature="3343:3366" placeholder="SELECT * FRO..tiposaula..." />
+            <marker date="1440524676262" expanded="true" signature="3506:3513" placeholder="select * fro..asignaturas..." />
+            <marker date="1440524676262" expanded="true" signature="3506:3684" placeholder="select a.* f..asignaturas..." />
+            <marker date="1440524676262" expanded="true" signature="4050:4191" placeholder="INSERT INTO ..." />
+            <marker date="1440524676262" expanded="true" signature="4050:4208" placeholder="INSERT INTO ..." />
+            <marker date="1440524676262" expanded="true" signature="4128:4191" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="4509:4672" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="4515:4569" placeholder="INSERT INTO ..." />
+            <marker date="1440524676262" expanded="true" signature="5033:5189" placeholder="select * fro..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="5033:5206" placeholder="select * fro..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="5418:5609" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="5424:5609" placeholder="DELETE FROM ..." />
+            <marker date="1440524676262" expanded="true" signature="5881:6020" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="5881:6073" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="6265:6566" placeholder="SELECT a.COD..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="6800:7105" placeholder="SELECT a.COD..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="7312:7405" placeholder="select * fro..tiposaula..." />
+            <marker date="1440524676262" expanded="true" signature="7558:7655" placeholder="select * fro..tiposaula..." />
           </folding>
         </state>
       </provider>
@@ -736,26 +798,29 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1440354600204" expanded="true" signature="2926:2954" placeholder="SELECT * FRO..planesestudios..." />
-            <marker date="1440354600204" expanded="true" signature="2926:2971" placeholder="SELECT * FRO..planesestudios..." />
-            <marker date="1440354600204" expanded="true" signature="2926:2999" placeholder="SELECT * FRO..planesestudios..." />
-            <marker date="1440354600204" expanded="true" signature="3114:3253" placeholder="select t.*, ..tiposrecurso..." />
-            <marker date="1440354600204" expanded="true" signature="3370:3384" placeholder="SELECT * FRO..hor_dotaciones..." />
-            <marker date="1440354600204" expanded="true" signature="3370:3393" placeholder="SELECT * FRO..tiposaula..." />
-            <marker date="1440354600204" expanded="true" signature="3533:3540" placeholder="select * fro..asignaturas..." />
-            <marker date="1440354600204" expanded="true" signature="3533:3711" placeholder="select a.* f..asignaturas..." />
-            <marker date="1440354600204" expanded="true" signature="4180:4343" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="4186:4240" placeholder="INSERT INTO ..." />
-            <marker date="1440354600204" expanded="true" signature="4704:4860" placeholder="select * fro..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="4704:4877" placeholder="select * fro..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="5089:5280" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="5095:5280" placeholder="DELETE FROM ..." />
-            <marker date="1440354600204" expanded="true" signature="5552:5691" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="5552:5744" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="5936:6237" placeholder="SELECT a.COD..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="6471:6776" placeholder="SELECT a.COD..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="6983:7076" placeholder="select * fro..tiposaula..." />
-            <marker date="1440354600204" expanded="true" signature="7229:7326" placeholder="select * fro..tiposaula..." />
+            <marker date="1440524676262" expanded="true" signature="2899:2927" placeholder="SELECT * FRO..planesestudios..." />
+            <marker date="1440524676262" expanded="true" signature="2899:2944" placeholder="SELECT * FRO..planesestudios..." />
+            <marker date="1440524676262" expanded="true" signature="2899:2972" placeholder="SELECT * FRO..planesestudios..." />
+            <marker date="1440524676262" expanded="true" signature="3087:3226" placeholder="select t.*, ..tiposrecurso..." />
+            <marker date="1440524676262" expanded="true" signature="3343:3357" placeholder="SELECT * FRO..hor_dotaciones..." />
+            <marker date="1440524676262" expanded="true" signature="3343:3366" placeholder="SELECT * FRO..tiposaula..." />
+            <marker date="1440524676262" expanded="true" signature="3506:3513" placeholder="select * fro..asignaturas..." />
+            <marker date="1440524676262" expanded="true" signature="3506:3684" placeholder="select a.* f..asignaturas..." />
+            <marker date="1440524676262" expanded="true" signature="4050:4191" placeholder="INSERT INTO ..." />
+            <marker date="1440524676262" expanded="true" signature="4050:4208" placeholder="INSERT INTO ..." />
+            <marker date="1440524676262" expanded="true" signature="4128:4191" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="4509:4672" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="4515:4569" placeholder="INSERT INTO ..." />
+            <marker date="1440524676262" expanded="true" signature="5033:5189" placeholder="select * fro..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="5033:5206" placeholder="select * fro..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="5418:5609" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="5424:5609" placeholder="DELETE FROM ..." />
+            <marker date="1440524676262" expanded="true" signature="5881:6020" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="5881:6073" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="6265:6566" placeholder="SELECT a.COD..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="6800:7105" placeholder="SELECT a.COD..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="7312:7405" placeholder="select * fro..tiposaula..." />
+            <marker date="1440524676262" expanded="true" signature="7558:7655" placeholder="select * fro..tiposaula..." />
           </folding>
         </state>
       </provider>
@@ -772,26 +837,29 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1440354600204" expanded="true" signature="2926:2954" placeholder="SELECT * FRO..planesestudios..." />
-            <marker date="1440354600204" expanded="true" signature="2926:2971" placeholder="SELECT * FRO..planesestudios..." />
-            <marker date="1440354600204" expanded="true" signature="2926:2999" placeholder="SELECT * FRO..planesestudios..." />
-            <marker date="1440354600204" expanded="true" signature="3114:3253" placeholder="select t.*, ..tiposrecurso..." />
-            <marker date="1440354600204" expanded="true" signature="3370:3384" placeholder="SELECT * FRO..hor_dotaciones..." />
-            <marker date="1440354600204" expanded="true" signature="3370:3393" placeholder="SELECT * FRO..tiposaula..." />
-            <marker date="1440354600204" expanded="true" signature="3533:3540" placeholder="select * fro..asignaturas..." />
-            <marker date="1440354600204" expanded="true" signature="3533:3711" placeholder="select a.* f..asignaturas..." />
-            <marker date="1440354600204" expanded="true" signature="4180:4343" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="4186:4240" placeholder="INSERT INTO ..." />
-            <marker date="1440354600204" expanded="true" signature="4704:4860" placeholder="select * fro..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="4704:4877" placeholder="select * fro..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="5089:5280" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="5095:5280" placeholder="DELETE FROM ..." />
-            <marker date="1440354600204" expanded="true" signature="5552:5691" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="5552:5744" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="5936:6237" placeholder="SELECT a.COD..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="6471:6776" placeholder="SELECT a.COD..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="6983:7076" placeholder="select * fro..tiposaula..." />
-            <marker date="1440354600204" expanded="true" signature="7229:7326" placeholder="select * fro..tiposaula..." />
+            <marker date="1440524676262" expanded="true" signature="2899:2927" placeholder="SELECT * FRO..planesestudios..." />
+            <marker date="1440524676262" expanded="true" signature="2899:2944" placeholder="SELECT * FRO..planesestudios..." />
+            <marker date="1440524676262" expanded="true" signature="2899:2972" placeholder="SELECT * FRO..planesestudios..." />
+            <marker date="1440524676262" expanded="true" signature="3087:3226" placeholder="select t.*, ..tiposrecurso..." />
+            <marker date="1440524676262" expanded="true" signature="3343:3357" placeholder="SELECT * FRO..hor_dotaciones..." />
+            <marker date="1440524676262" expanded="true" signature="3343:3366" placeholder="SELECT * FRO..tiposaula..." />
+            <marker date="1440524676262" expanded="true" signature="3506:3513" placeholder="select * fro..asignaturas..." />
+            <marker date="1440524676262" expanded="true" signature="3506:3684" placeholder="select a.* f..asignaturas..." />
+            <marker date="1440524676262" expanded="true" signature="4050:4191" placeholder="INSERT INTO ..." />
+            <marker date="1440524676262" expanded="true" signature="4050:4208" placeholder="INSERT INTO ..." />
+            <marker date="1440524676262" expanded="true" signature="4128:4191" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="4509:4672" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="4515:4569" placeholder="INSERT INTO ..." />
+            <marker date="1440524676262" expanded="true" signature="5033:5189" placeholder="select * fro..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="5033:5206" placeholder="select * fro..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="5418:5609" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="5424:5609" placeholder="DELETE FROM ..." />
+            <marker date="1440524676262" expanded="true" signature="5881:6020" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="5881:6073" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="6265:6566" placeholder="SELECT a.COD..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="6800:7105" placeholder="SELECT a.COD..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="7312:7405" placeholder="select * fro..tiposaula..." />
+            <marker date="1440524676262" expanded="true" signature="7558:7655" placeholder="select * fro..tiposaula..." />
           </folding>
         </state>
       </provider>
@@ -958,7 +1026,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -971,7 +1038,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -984,7 +1050,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -997,7 +1062,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1012,12 +1076,13 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="85.5" y="99.0" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="86.0" y="99.0" />
           <SelectedNodes />
           <Categories>
-            <Category>Key columns</Category>
             <Category>Columns</Category>
+            <Category>Key columns</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
@@ -1041,21 +1106,8 @@
     </entry>
     <entry file="dbDummy://db-console:/7cf4b17c/01383689-39ae-4871-becc-9f7b1ce55fd0/">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.56666666" vertical-offset="0" max-vertical-offset="136">
+        <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="136">
           <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/7cf4b17c/01383689-39ae-4871-becc-9f7b1ce55fd0/eps..asignaturascursosactivrecursos">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1090,30 +1142,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3418647" vertical-offset="0" max-vertical-offset="3536">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        <state vertical-scroll-proportion="-3.090909" vertical-offset="0" max-vertical-offset="3621">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
           <folding>
-            <marker date="1440354600204" expanded="true" signature="2926:2954" placeholder="SELECT * FRO..planesestudios..." />
-            <marker date="1440354600204" expanded="true" signature="2926:2971" placeholder="SELECT * FRO..planesestudios..." />
-            <marker date="1440354600204" expanded="true" signature="2926:2999" placeholder="SELECT * FRO..planesestudios..." />
-            <marker date="1440354600204" expanded="true" signature="3114:3253" placeholder="select t.*, ..tiposrecurso..." />
-            <marker date="1440354600204" expanded="true" signature="3370:3384" placeholder="SELECT * FRO..hor_dotaciones..." />
-            <marker date="1440354600204" expanded="true" signature="3370:3393" placeholder="SELECT * FRO..tiposaula..." />
-            <marker date="1440354600204" expanded="true" signature="3533:3540" placeholder="select * fro..asignaturas..." />
-            <marker date="1440354600204" expanded="true" signature="3533:3711" placeholder="select a.* f..asignaturas..." />
-            <marker date="1440354600204" expanded="true" signature="4180:4343" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="4186:4240" placeholder="INSERT INTO ..." />
-            <marker date="1440354600204" expanded="true" signature="4704:4860" placeholder="select * fro..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="4704:4877" placeholder="select * fro..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="5089:5280" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="5095:5280" placeholder="DELETE FROM ..." />
-            <marker date="1440354600204" expanded="true" signature="5552:5691" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="5552:5744" placeholder="UPDATE asign..." />
-            <marker date="1440354600204" expanded="true" signature="5936:6237" placeholder="SELECT a.COD..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="6471:6776" placeholder="SELECT a.COD..asignaturascursosactiv..." />
-            <marker date="1440354600204" expanded="true" signature="6983:7076" placeholder="select * fro..tiposaula..." />
-            <marker date="1440354600204" expanded="true" signature="7229:7326" placeholder="select * fro..tiposaula..." />
+            <marker date="1440524676262" expanded="true" signature="2899:2927" placeholder="SELECT * FRO..planesestudios..." />
+            <marker date="1440524676262" expanded="true" signature="2899:2944" placeholder="SELECT * FRO..planesestudios..." />
+            <marker date="1440524676262" expanded="true" signature="2899:2972" placeholder="SELECT * FRO..planesestudios..." />
+            <marker date="1440524676262" expanded="true" signature="3087:3226" placeholder="select t.*, ..tiposrecurso..." />
+            <marker date="1440524676262" expanded="true" signature="3343:3357" placeholder="SELECT * FRO..hor_dotaciones..." />
+            <marker date="1440524676262" expanded="true" signature="3343:3366" placeholder="SELECT * FRO..tiposaula..." />
+            <marker date="1440524676262" expanded="true" signature="3506:3513" placeholder="select * fro..asignaturas..." />
+            <marker date="1440524676262" expanded="true" signature="3506:3684" placeholder="select a.* f..asignaturas..." />
+            <marker date="1440524676262" expanded="true" signature="4050:4191" placeholder="INSERT INTO ..." />
+            <marker date="1440524676262" expanded="true" signature="4050:4208" placeholder="INSERT INTO ..." />
+            <marker date="1440524676262" expanded="true" signature="4128:4191" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="4509:4672" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="4515:4569" placeholder="INSERT INTO ..." />
+            <marker date="1440524676262" expanded="true" signature="5033:5189" placeholder="select * fro..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="5033:5206" placeholder="select * fro..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="5418:5609" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="5424:5609" placeholder="DELETE FROM ..." />
+            <marker date="1440524676262" expanded="true" signature="5881:6020" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="5881:6073" placeholder="UPDATE asign..." />
+            <marker date="1440524676262" expanded="true" signature="6265:6566" placeholder="SELECT a.COD..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="6800:7105" placeholder="SELECT a.COD..asignaturascursosactiv..." />
+            <marker date="1440524676262" expanded="true" signature="7312:7405" placeholder="select * fro..tiposaula..." />
+            <marker date="1440524676262" expanded="true" signature="7558:7655" placeholder="select * fro..tiposaula..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/7cf4b17c/01383689-39ae-4871-becc-9f7b1ce55fd0/eps..asignaturascursosactivrecursos">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

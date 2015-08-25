@@ -8,8 +8,8 @@ include_once './src/Epi.php';
 Epi::setPath('base', './src');
 //cargamos el modulo route
 Epi::init('route','database','api');
-EpiDatabase::employ('mysql','eps','localhost','root','GhotHod4');
-//EpiDatabase::employ('mysql','eps','localhost','root','');
+//EpiDatabase::employ('mysql','eps','localhost','root','GhotHod4');
+EpiDatabase::employ('mysql','eps','localhost','root','');
 
 //seteamos rutas de acceso y funciones handlers
 getRoute()->get('/', 'home');
@@ -58,7 +58,7 @@ getRoute()->get('/recursosdocentes', 'obtener_recursos_docentes');
  */
 getRoute()->get('/titulaciones/(\w+)/curso/(\d+)/asignaturas', 'obtener_asignaturas_curso');
 
-getRoute()->post('/asignaturas/(\d+)/actividad/(\d+)/recursodocente','asignar_recurso_asignatura');
+getRoute()->post('/asignarRecursoDocente','asignar_recurso_asignatura');
 getRoute()->post('/asignarTipoAulaAsignatura','asignar_tipoAula_asignatura');
 getRoute()->delete('/asignaturas/(\d+)/actividad/(\d+)/recursodocente/(\d+)','delete_recurso_asignatura');
 
@@ -122,8 +122,13 @@ function obtener_tipos_actividades() {
     return salidaJSON('[{ codigo"   : "xxx",    "nombre"   : "yyy" }]');
 }
 
-function asignar_recurso_asignatura($asignatura,$actividad) {
-    echo $asignatura . $actividad;
+function asignar_recurso_asignatura() {
+    $fileData = file_get_contents("php://input");
+    $data = json_decode($fileData);
+    $recurso= getDatabase()->execute('INSERT INTO asignaturascursosactivrecursos (CURSO, CODASI, CODACT, TIPORECURSO)
+              VALUES (:curso, :codasi, :codact, :codtipoaula)',
+        array(':curso'=>$data->curso,':codasi'=>$data->codasi,':codact'=>$data->codact,':codtipoaula'=>$data->TIPORECURSO));
+    echo($recurso);
 
 
 }function asignar_tipoAula_asignatura() {
