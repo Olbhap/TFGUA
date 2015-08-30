@@ -60,13 +60,18 @@ getRoute()->get('/titulaciones/(\w+)/curso/(\d+)/asignaturas', 'obtener_asignatu
 
 getRoute()->post('/asignarRecursoDocente','asignar_recurso_asignatura');
 getRoute()->post('/asignarTipoAulaAsignatura','asignar_tipoAula_asignatura');
-getRoute()->delete('/asignaturas/(\d+)/actividad/(\d+)/recursodocente/(\d+)','delete_recurso_asignatura');
+
 
 getRoute()->get('/asignaturas/(\d+)/actividades','obtener_listado_actividades');
-getRoute()->get('/asignaturas/(\d+)/actividad/(\d+)/curso/(.+)/aulasCentralizadas','obtener_listado_tiposAula_centralizadas');
+getRoute()->get('/asignaturas/(\d+)/actividad/(\d+)/curso/(.+)/recursos','obtener_listado_recursoss');
+getRoute()->get('/asignaturas/(\d+)/actividad/(\d+)/curso/(.+)/aula','obtener_listado_tiposAula');
 getRoute()->get('/asignaturas/(\d+)/actividad/(\d+)/curso/(.+)/aulasNoCentralizadas','obtener_listado_tiposAula_noCentralizadas');
 getRoute()->delete('/asignaturas/(\d+)/actividad/(\d+)/curso/(.+)/tipoAula/(\d+)','remove_tiposAula_asignatura_actividad');
 getRoute()->delete('/asignaturas/(\d+)/curso/(.+)/tipoAula/','remove_tiposAula_asignatura');
+
+getRoute()->delete('/asignaturas/(\d+)/actividad/(\d+)/curso/(.+)/recursos/(\d+)','remove_recurso_asignatura_actividad');
+getRoute()->delete('/asignaturas/(\d+)/actividad/(\d+)/curso/(.+)/recursos','remove_recurso_asignatura_actividad_all');
+getRoute()->delete('/asignaturas/(\d+)/curso/(.+)/recursos','remove_recurso_asignatura_all');
 
 
 /*
@@ -140,8 +145,23 @@ function asignar_recurso_asignatura() {
     echo($tipoAula);
 }
 
-function delete_recurso_asignatura($asignatura,$actividad,$recurso) {
-    echo $asignatura . $actividad . $recurso;
+function remove_recurso_asignatura_actividad($asignatura, $actividad, $curso, $recurso) {
+    $resultado = getDatabase()->execute('DELETE from asignaturascursosactivrecursos
+                                          WHERE CODASI = :asignatura AND CODACT = :actividad AND CURSO = :curso AND TIPORECURSO = :recurso',
+        array('asignatura'=>$asignatura, 'actividad'=>$actividad, 'curso'=>$curso, 'recurso'=>$recurso));
+    echo($resultado);
+}
+function remove_recurso_asignatura_actividad_all($asignatura, $actividad, $curso) {
+    $resultado = getDatabase()->execute('DELETE from asignaturascursosactivrecursos
+                                          WHERE CODASI = :asignatura AND CODACT = :actividad AND CURSO = :curso',
+        array('asignatura'=>$asignatura, 'actividad'=>$actividad, 'curso'=>$curso));
+    echo($resultado);
+}
+function remove_recurso_asignatura_all($asignatura, $curso) {
+    $resultado = getDatabase()->execute('DELETE from asignaturascursosactivrecursos
+                                          WHERE CODASI = :asignatura AND CURSO = :curso',
+        array('asignatura'=>$asignatura, 'curso'=>$curso));
+    echo($resultado);
 }
 
 function obtener_listado_actividades($asignatura) {
@@ -163,10 +183,16 @@ function remove_tiposAula_asignatura($asignatura, $curso) {
     echo($resultado);
 }
 
-function obtener_listado_tiposAula_centralizadas($asignatura, $actividad, $curso) {
+function obtener_listado_recursoss($asignatura, $actividad, $curso) {
+    $Recursos = getDatabase()->all('SELECT tip.*, cat.DESCRIP AS CATDESCRIP FROM asignaturascursosactivrecursos a, tiposrecurso tip, categoriasrecurso cat
+                WHERE  a.CODACT = :codact AND a.CODASI = :codasi AND a.curso = :curso AND a.TIPORECURSO = tip.TIPORECURSO and tip.CODCATRECURSO = cat.CODCAT', array(':codact'=>$actividad,':codasi'=>$asignatura,':curso'=>$curso));
+    return salidaJSON($Recursos);
+}
+
+
+function obtener_listado_tiposAula($asignatura, $actividad, $curso) {
     $tiposAula = getDatabase()->all('SELECT a.CODTIPOAULA, tip.TIPOAULA, tip.DESCRIP, tip.CODEPS FROM asignaturascursosactiv a, tiposaula tip
-            where a.CODACT = :codact AND a.CODASI = :codasi AND a.curso = :curso AND a.CODTIPOAULA = tip.CODTIPOAULA
-        AND tip.TIPOAULA IN ("01AULA","03DEPORTE","02INFORM","05LABDOC","04NO")', array(':codact'=>$actividad,':codasi'=>$asignatura,':curso'=>$curso));
+            where a.CODACT = :codact AND a.CODASI = :codasi AND a.curso = :curso AND a.CODTIPOAULA = tip.CODTIPOAULA', array(':codact'=>$actividad,':codasi'=>$asignatura,':curso'=>$curso));
     return salidaJSON($tiposAula);
 
 }function obtener_listado_tiposAula_noCentralizadas($asignatura, $actividad, $curso) {
