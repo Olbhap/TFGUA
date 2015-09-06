@@ -27,24 +27,27 @@ getRoute()->get('/', 'home');
 getRoute()->get('/titulaciones', 'obtener_titulaciones');
 
 /*
- * Lista de tipos de recursos docentes
+ * Lista de recursos docentes
  * GET
- *  [{
- *      "codigo"   : "xxx",
- *      "nombre"   : "yyy"
- *  }]
+ *   [{
+ *  "tiporecurso": "1",
+ *  "descrip"   : "Matlab",
+ *  "codcatrecurso": "1",
+ *  "catdescrip": “Software”
+ *   }]
  */
 getRoute()->get('/tiposrecursosdocentes', 'obtener_tipos_recursos');
 
-/*
- * Lista de recursos docentes
- * GET
- *  [{
- *      "codigo"   : "xxx",
- *      "nombre"   : "yyy",
- *      "tipo"     : "zzzz"
- *  }]
- */
+/* Lista de recursos docentes
+*  GET
+*   [{
+*   "codtipoaula": "2",
+*   "tipoaula"   : "01Aula",
+*   "descrip": "Aula de Teoria",
+*   "codeps": “TEO”
+*   }]
+*/
+
 getRoute()->get('/recursosdocentes', 'obtener_recursos_docentes');
 
 /*
@@ -52,25 +55,113 @@ getRoute()->get('/recursosdocentes', 'obtener_recursos_docentes');
  * GET
  *  [{
  *      "codigo"   : "xxx",
- *      "nombre"   : "yyy",
- *      "actividades"     : "[{codigo: "nnnnn"}]"
+ *      "nombre"   : "yyy", *
  *  }]
  */
 getRoute()->get('/titulaciones/(\w+)/curso/(\d+)/asignaturas', 'obtener_asignaturas_curso');
 
+/*
+ * Inserta un recurso a una asignatura/actividad
+POST
+Params:
+{
+   “curso”       : “xxx”
+   “codasi”      : ”yyy”
+   “codact”      : “zzz”
+   “codtipoaula” : “x”
+}
+ */
 getRoute()->post('/asignarRecursoDocente','asignar_recurso_asignatura');
+
+/*
+Inserta un tipoAula a una asignatura/actividad
+POST
+Params:
+{
+    “curso”       : “xxx”
+   “codasi”      : ”yyy”
+   “codact”      : “zzz”
+   “codtipoaula” : “x”
+}
+*/
 getRoute()->post('/asignarTipoAulaAsignatura','asignar_tipoAula_asignatura');
 
-
+/*
+ Lista de actividades para una asignatura
+GET
+[{
+  "codact"    : "xxx",
+  "ciclo"     : "yy",
+  "tipoactiv" : "yy",
+  "actividad" : "yyyy",
+  "ratioalu"  : "yyyy",
+  “ratiominimo": "yy",
+  "coeficiente": "yy",
+  "porsesiones": "yy",
+}]
+ */
 getRoute()->get('/asignaturas/(\d+)/actividades','obtener_listado_actividades');
+/*
+ Lista de recursos para una asignatura y una actividad
+GET
+[{
+  "tiporecurso"   : "xxx",
+  "descrip"       : "yy",
+  "codcatrecurso" : "yy",
+}]
+
+ */
 getRoute()->get('/asignaturas/(\d+)/actividad/(\d+)/curso/(.+)/recursos','obtener_listado_recursoss');
+/*
+ Lista de TiposAula para una asignatura y una actividad
+GET
+[{
+  "codtipoaula"  : "xxx",
+  "tipoaula"     : "yy",
+  "descrip"      : "zz",
+  "codeps"       : "xx",
+}]
+ */
 getRoute()->get('/asignaturas/(\d+)/actividad/(\d+)/curso/(.+)/aula','obtener_listado_tiposAula');
 getRoute()->get('/asignaturas/(\d+)/actividad/(\d+)/curso/(.+)/aulasNoCentralizadas','obtener_listado_tiposAula_noCentralizadas');
+
+/*
+Elimina un TipoAula para una asignatura y actividad
+DELETE
+Return:
+-1    : Error
+count : Integer con la cantidad de filas afectadas
+
+ */
+
 getRoute()->delete('/asignaturas/(\d+)/actividad/(\d+)/curso/(.+)/tipoAula/(\d+)','remove_tiposAula_asignatura_actividad');
+/*
+Elimina un TipoAula para todas las actividades de una asignatura.
+DELETE
+Return:
+-1    : Error
+count : Integer con la cantidad de filas afectadas
+
+ */
 getRoute()->delete('/asignaturas/(\d+)/curso/(.+)/tipoAula/','remove_tiposAula_asignatura');
 
+/*
+Elimina un recurso para una asignatura y actividad dados
+DELETE
+Return:
+-1    : Error
+count : Integer con la cantidad de filas afectadas
+ */
 getRoute()->delete('/asignaturas/(\d+)/actividad/(\d+)/curso/(.+)/recursos/(\d+)','remove_recurso_asignatura_actividad');
 getRoute()->delete('/asignaturas/(\d+)/actividad/(\d+)/curso/(.+)/recursos','remove_recurso_asignatura_actividad_all');
+
+/*
+Elimina los recursos de todas las actividades de una asignatura.
+DELETE
+Return:
+-1    : Error
+count : Integer con la cantidad de filas afectadas
+ */
 getRoute()->delete('/asignaturas/(\d+)/curso/(.+)/recursos','remove_recurso_asignatura_all');
 
 
